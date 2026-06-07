@@ -182,3 +182,7 @@ header {
     font-weight: bold;
     font-size: 20px;
 }
+
+input, textarea {
+    border-radius: 12px;
+}
