@@ -8,27 +8,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="waringg">UWAGA: Strona w trakcie budowy i testów !!!</div>
+    <div class="warning-bar">UWAGA: Strona w trakcie budowy i testów !!!</div>
 
-    <header>
-        <h2 id="typing"></h2>
+    <header class="site-header">
+        <!-- <h2 id="typing"></h2>
 
         <button id="menuBtn">
             ☰
         </button>
 
         <nav id="mobileNav">
-            <a href="#">O mnie</a>
-            <a href="#">Umiejętności</a>
-            <a href="#">Projekty</a>
-            <a href="#">Kontakt</a>
+            <a href="#about">O mnie</a>
+            <a href="#skills">Umiejętności</a>
+            <a href="#projects">Projekty</a>
+            <a href="#contact">Kontakt</a>
         </nav>
 
         <nav>
-            <a href="#">O mnie</a>
-            <a href="#">Umiejętności</a>
-            <a href="#">Projekty</a>
-            <a href="#">Kontakt</a>
+            <a href="#about">O mnie</a>
+            <a href="#skills">Umiejętności</a>
+            <a href="#projects">Projekty</a>
+            <a href="#contact">Kontakt</a>
+        </nav> -->
+
+        <h2 id="typing" class="brand"></h2>
+
+        <div class="header-actions">
+        <button id="themeBtn" class="theme-btn" type="button">Zmień motyw</button>
+        <button id="menuBtn" class="menu-btn" type="button" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+        </div>
+
+        <nav id="mobileNav" class="mobile-nav" aria-label="Menu mobilne">
+            <a href="#about">O mnie</a>
+            <a href="#skills">Umiejętności</a>
+            <a href="#projects">Projekty</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+
+        <nav id="desktop-nav" aria-label="Menu główne">
+            <a href="#about">O mnie</a>
+            <a href="#skills">Umiejętności</a>
+            <a href="#projects">Projekty</a>
+            <a href="#contact">Kontakt</a>
         </nav>
     </header>
 
@@ -40,18 +61,11 @@
                 Tworzę aplikacje internetowe wykorzystując: HTML5, CSS3,
                 JavaScript, Node.js, TypeScript, React, PHP i MySQL.
             </p>
-
-            <button id="themeBtn">
-                Zmień motyw
-            </button>
         </section>
 
         <section id="about" class="hidden">
             <h2>O mnie</h2>
-
-            <p>
-                Programista rozwijający się w kierunku Full Stack Development.
-            </p>
+            <p>Programista rozwijający się w kierunku Full Stack Development.</p>
         </section>
 
         <section id="skills" class="hidden">
@@ -61,6 +75,7 @@
                 <div>HTML5</div>
                 <div>CSS3</div>
                 <div>JavaScript</div>
+                <div>Node.js</div>
                 <div>PHP</div>
                 <div>MySQL</div>
             </div>
@@ -68,9 +83,7 @@
 
         <section id="projects">
             <h2>Projekty</h2>
-            
-            <input type="text" id="search" placeholder="Szukaj projektu...">
-
+            <input type="text" id="search" placeholder="Szukaj projektu..."/>
             <div id="projectsContainer"></div>
         </section>
 
@@ -78,18 +91,17 @@
             <h2>Kontakt</h2>
 
             <form action="">
-                <input type="text" name="" id="" placeholder="Imię">
-
-                <input type="email" placeholder="Email">
-
+                <input type="text" name="" id="" placeholder="Imię"/>
+                <input type="email" placeholder="Email"/>
                 <textarea name="" id="" placeholder="wiadomość"></textarea>
-
                 <button type="submit">Wyślij</button>
             </form>
         </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <p>2026 ML Dev Portfolio</p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
